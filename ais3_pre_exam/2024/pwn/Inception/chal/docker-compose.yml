@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  inception:
+    build: ./
+    volumes:
+      - ./share/:/home/inception:ro
+      - ./xinetd:/etc/xinetd.d/inception:ro
+    ports:
+      - "50003:50003"

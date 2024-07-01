@@ -1,0 +1,14 @@
+---
+name: "火拳のエース"
+description: |
+  What I'm about to say. Old Man... Everyone... And you, Luffy... Even though... I'm so worthless... Even though... I carry the blood of a demon... Thank you... For loving me
+  ![ace](https://i.pinimg.com/originals/a6/f2/03/a6f203dc67345a9b1580708d8aed6110.gif)
+  Author: Kazma
+flag: "AIS3{G0D_D4MN_4N9R_15_5UP3R_P0W3RFU1!!!}"
+author: Kazma
+tags:
+  - rev
+  - easy
+canonical_name: rage
+distfiles:
+  - ./chal/rage

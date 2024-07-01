@@ -1,0 +1,10 @@
+version: '3'
+    
+services:
+  mathter:
+    build: ./
+    volumes:
+      - ./share/:/home/mathter:ro
+      - ./xinetd:/etc/xinetd.d/mathter:ro
+    ports:
+      - "50001:50001"

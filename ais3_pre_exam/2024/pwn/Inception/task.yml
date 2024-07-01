@@ -1,0 +1,23 @@
+name: "Inception"
+description: |
+  Come back to reality, Dom! 
+  Get your head out of the clouds and pay attention. 
+  It's only losers who daydream all day like you. 
+  Wait, is that really the case?
+  ![spin](https://i.gifer.com/NjSO.gif)
+
+  Connection info: `nc chals1.ais3.org 50003`
+
+  Author: Kazma
+flag: "AIS3{Y0u_h4v3_b33n_succ3ssfully_r3cru1t3d_t0_my_t34m}"
+author: Kazma
+host: chals1.ais3.org
+port: 50003
+tags:
+  - pwn
+  - medium
+canonical_name: inception
+compose: ./chal/docker-compose.yml
+distfiles:
+  - ./chal/
+  - ./dist/share/flag

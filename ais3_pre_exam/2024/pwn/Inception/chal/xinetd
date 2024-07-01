@@ -1,0 +1,13 @@
+service inception
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocel = tcp
+    server = /home/inception/run.sh
+    user = inception
+    port = 50003
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}

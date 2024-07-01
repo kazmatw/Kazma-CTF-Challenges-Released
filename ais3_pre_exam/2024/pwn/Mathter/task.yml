@@ -1,0 +1,20 @@
+name: "Mathter"
+description: |
+  Life may betray you, brothers may deceive you, but mathematics never will.
+  Becaaaaaaaaaaause:
+  ![math](https://github.com/kazmatw/kazmatw/blob/main/math.png?raw=true)
+
+  Connection info: `nc chals1.ais3.org 50001`
+
+  Author: Kazma
+flag: "AIS3{0mg_k4zm4_mu57_b3_k1dd1ng_m3_2e89c9}"
+author: Kazma
+host: chals1.ais3.org
+port: 50001
+tags:
+  - pwn
+  - warmup
+canonical_name: mathter
+compose: ./chal/docker-compose.yml
+distfiles:
+  - ./chal/share/mathter

@@ -1,0 +1,136 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <time.h>
+#define USERDEF0 "{{ userdef0 }}"
+#define USERDEF1 "{{ userdef1 }}"
+#define USERDEF2 "{{ userdef2 }}"
+#define USERDEF3 "{{ userdef3 }}"
+
+char padding2[{{ padding }}];
+char* buffer0;
+char* buffer1;
+char* buffer2;
+char* buffer3;
+
+void print_flag() {
+    char* flag = "AIS3{G0D";
+    printf("What I'm about to say. Old Man... Everyone... And you, Luffy... Even though... I'm so worthless... Even though... I carry the blood of a demon... Thank you... For loving me\nThe flag is ");
+
+    int delay = 2000000; 
+
+    usleep(delay);
+
+    for (int i = 0; flag[i] != '\0'; i++) {
+        usleep(delay); 
+        printf("%c ", flag[i]);
+        fflush(stdout);
+        delay *= 2;
+    }
+
+    usleep(delay);
+
+    printf("\n...uh, the rest, I've forgotten it. Do you remember the rest of it?\n");
+}
+
+int complex_function(int value, int i) {
+#define LAMBDA 17
+  int offset, modifier;
+
+  if (!('A' <= value && value <= 'Z')) {
+    printf("It feels slightly wrong, but almost correct...\n");
+    exit(1);
+  }
+
+  offset = (value - 'A' + (LAMBDA * i)) % ('Z' - 'A' + 1);
+  modifier = (i % 3) + 3;
+
+  switch (i % 3) {
+    case 0:
+      offset = (offset * modifier + 7) % ('Z' - 'A' + 1);
+      break;
+    case 1:
+      offset = (offset + modifier * 2) % ('Z' - 'A' + 1);
+      break;
+    case 2:
+      offset = (offset - modifier + ('Z' - 'A' + 1)) % ('Z' - 'A' + 1);
+      break;
+  }
+
+  return offset + 'A';
+}
+
+void char_to_hex(char c, char *hex) {
+    sprintf(hex, "%02x", (unsigned char)c);
+}
+
+char hex_to_char(char *hex) {
+    int value;
+    sscanf(hex, "%02x", &value);
+    return (char)value;
+}
+
+void xor_strings(char *input, const char *key, char *output) {
+    char hex1[3], hex2[3], result_hex[3];
+    for (int i = 0; i < 8; i++) {
+        char_to_hex(input[i], hex1);
+        char_to_hex(key[i], hex2);
+        int val1, val2;
+        sscanf(hex1, "%x", &val1);
+        sscanf(hex2, "%x", &val2);
+        sprintf(result_hex, "%02x", val1 ^ val2);
+        output[i] = hex_to_char(result_hex);
+    }
+    output[8] = '\0'; 
+}
+
+
+int main(int argc, char* argv[]) {
+  srand(time(NULL));
+  buffer0 = malloc(9);
+  buffer1 = malloc(9);
+  buffer2 = malloc(9);
+  buffer3 = malloc(9);
+
+  memset(buffer0, 0, 9);
+  memset(buffer1, 0, 9);
+  memset(buffer2, 0, 9);
+  memset(buffer3, 0, 9);
+
+  print_flag();
+  scanf("%8s %8s %8s %8s", buffer0, buffer1, buffer2, buffer3);
+
+  char *keys[4] = {"\x0e\x0d\x7d\x06\x0f\x17\x76\x04", 
+                     "\x6d\x00\x1b\x7c\x6c\x13\x62\x11",
+                     "\x1e\x7e\x06\x13\x07\x66\x0e\x71",
+                     "\x17\x14\x1d\x70\x79\x67\x74\x33"};
+
+    xor_strings(buffer0, keys[0], buffer0);
+    xor_strings(buffer1, keys[1], buffer1);
+    xor_strings(buffer2, keys[2], buffer2);
+    xor_strings(buffer3, keys[3], buffer3);
+
+
+  for (int i = 0; i < 8; ++i) {
+    buffer0[i] = complex_function(buffer0[i], i);
+    buffer1[i] = complex_function(buffer1[i], i + 32);
+    buffer2[i] = complex_function(buffer2[i], i + 64);
+    buffer3[i] = complex_function(buffer3[i], i + 96);
+  }
+
+  if (strncmp(buffer0, USERDEF0, 8)
+   || strncmp(buffer1, USERDEF1, 8)
+   || strncmp(buffer2, USERDEF2, 8)
+   || strncmp(buffer3, USERDEF3, 8)) {
+    printf("It feels slightly wrong, but almost correct...\n");
+  } else {
+    printf("Yes! I remember now, this is it!\n");
+  }
+
+  free(buffer0);
+  free(buffer1);
+  free(buffer2);
+  free(buffer3);
+}
+
