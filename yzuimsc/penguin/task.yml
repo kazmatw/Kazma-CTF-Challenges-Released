@@ -1,0 +1,18 @@
+name: "Mr. Penguin"
+description: |
+  Meet the Mr. Penguin~
+  ![penguin](https://ih1.redbubble.net/image.553512366.0278/st,small,845x845-pad,1000x1000,f8f8f8.u2.jpg)
+  
+  Author: Kazma
+  Flag format: `^YZUIMSC\{[A-Za-z0-9_]*\}$` 
+flag: YZUIMSC{you_found_the_flag}
+author: Kazma
+host:
+port:
+tags:
+  - linux
+  - lab
+canonical_name: penguin
+compose:
+distfiles:
+  - ./chal/penguin.zip

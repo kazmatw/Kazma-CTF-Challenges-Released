@@ -1,0 +1,22 @@
+name: "Dynamike"
+description: |
+  “Here, birdie birdie birdie.”
+  “Who wants some TNT?” 
+  “Down the mine.”
+
+  Dynamike is coming. With Kali, you can explode everything just like him.
+  ![dynamike](https://i.ytimg.com/vi/qoo5CK_0_Yo/maxresdefault.jpg)
+  
+  Author: Kazma
+  Flag format: `^YZUIMSC\{[A-Za-z0-9_]*\}$` 
+flag: YZUIMSC{b1rd13_b1rd13_b1rd13_y0u_4r3_g0d-l1k3}
+author: Kazma
+host:
+port:
+tags:
+  - linux
+  - easy
+canonical_name: Dynamike
+compose:
+distfiles:
+  - ./chal/

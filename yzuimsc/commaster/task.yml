@@ -1,0 +1,20 @@
+name: "Linux Commaster"
+description: |
+  Did you know that many commands have parameters that make them even more powerful?
+
+  I have tored the flag into three parts. Use the knowledge you've learned in class to find them and become a Linux command master!
+  ![penguin](https://e7.pngegg.com/pngimages/984/357/png-clipart-club-penguin-ninja-youtube-video-game-penguins-animals-club-penguin.png)
+  
+  Author: Kazma
+  Flag format: `^YZUIMSC\{[A-Za-z0-9_]*\}$` 
+flag: YZUIMSC{y0u_4r3_l1nux_b4s1c_c0mm4nd_m4st3r}
+author: Kazma
+host:
+port:
+tags:
+  - linux
+  - baby
+canonical_name: commaster
+compose:
+distfiles:
+  - ./chal/commaster.tar

@@ -1,0 +1,18 @@
+name: "Linux Trainee"
+description: |
+  Let's see if you are the real linux master. (trainee)
+  ![trainee](https://i.ytimg.com/vi/F9DheL7JH8w/maxresdefault.jpg)
+  
+  Author: Kazma
+  Flag format: `^YZUIMSC\{[A-Za-z0-9_]*\}$` 
+flag: YZUIMSC{https://youtu.be/zCbfcBIwrrY?si=qqXdb-RZCdI6V1m2}
+author: Kazma
+host:
+port:
+tags:
+  - linux
+  - easy
+canonical_name: trainee
+compose:
+distfiles:
+  - ./chal/trainee
