@@ -6,9 +6,9 @@ If you find this project useful, please consider giving it a star ⭐! It helps 
 
 | Challenge       | Category | Difficulty | Description                                                 |
 | --------------- | -------- | ---------- | ----------------------------------------------------------- |
-| Mr. Penguin     | linux    | baby       | The simplest Linux command challenge.                       |
-| Linux Trainee   | linux    | baby       | Use Linux commands to print printable strings in a binary file. |
-| Linux Commaster | linux    | easy       | Use Linux commands to find the file you need in a complex file structure. |
+| Mr.&nbsp;Penguin     | linux    | baby       | The simplest Linux command challenge.                       |
+| Linux&nbsp;Trainee   | linux    | baby       | Use Linux commands to print printable strings in a binary file. |
+| Linux&nbsp;Commaster | linux    | easy       | Use Linux commands to find the file you need in a complex file structure. |
 | Dynamike        | linux    | medium     | Just find the flag. XD                                      |
 
 ### AIS3 Pre-exam / My-First-CTF 2024
