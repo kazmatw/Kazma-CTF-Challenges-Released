@@ -2,6 +2,7 @@
 
 If you find this project useful, please consider giving it a star ⭐! It helps more people discover it.
 
+## Challenges Info
 ### YZUIMSC 2024
 
 | Challenge            | Category | Difficulty | Description                                                               |
