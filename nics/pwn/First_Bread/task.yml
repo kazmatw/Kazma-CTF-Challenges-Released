@@ -1,0 +1,17 @@
+name: "First Bread"
+description: |
+  Welcome to pwn.
+  ![smile](https://memeprod.ap-south-1.linodeobjects.com/user-template/3218116a9d1a28b2169c9dd2b9b34b4c.png)
+
+  Author: Kazma
+flag: FLAG{w3lc0m3_t0_pwn_y0ur_f1r5t_b1n4ry_3xpl01t4t10n_ch4ll3ng3}
+author: Kazma
+host: chall.nckuctf.org
+port: 5017
+tags:
+  - pwn
+  - medium
+canonical_name: bread
+compose:
+distfiles:
+  - ./dist/*

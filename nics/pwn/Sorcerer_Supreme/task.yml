@@ -1,0 +1,17 @@
+name: "Sorcerer Supreme"
+description: |
+  ![wizard](https://pa1.aminoapps.com/8040/114d3a79bcd55e6a54e3480383399c53dfb7bbcdr1-540-300_hq.gif)
+  What could possibly defeat the Sorcerer Supreme? Time travel?
+
+  Author: Kazma
+flag: FLAG{T1m3_tr4v3l_1s_3ff0rtl3ss_f0r_th3_S0rc3r3r_Supr3m3}
+author: Kazma
+host: chall.nckuctf.org
+port: 5018
+tags:
+  - pwn
+  - easy
+canonical_name: supreme
+compose:
+distfiles:
+  - ./dist/*

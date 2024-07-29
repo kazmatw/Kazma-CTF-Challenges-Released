@@ -1,0 +1,17 @@
+name: "Chosen1"
+description: |
+  ![Silence](https://64.media.tumblr.com/70a4dd04d755fe05c8531c3aaa05ba5a/7b0f9a5e6cc3c89f-33/s500x750/7c6cdbce1e0e6d44e744d952acbffe3329f8f067.gifv)
+  Only powerful spell can control everything.
+
+  Author: Kazma
+flag: NCKUCTF{13518402819187643711}
+author: Kazma
+host:
+port:
+tags:
+  - rev
+  - medium
+canonical_name: chosen1
+compose:
+distfiles:
+  - ./chal/chosen1

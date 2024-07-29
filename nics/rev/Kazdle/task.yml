@@ -1,0 +1,17 @@
+name: "Kazdle"
+description: |
+  ![wordle](https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F263989ba-730a-11ec-89e9-22d3d9c31ba2.jpg?crop=1258%2C838%2C121%2C81)
+  Have you ever play wordle?
+
+  Author: Kazma
+flag: NCKUCTF{allbeefneedispatience!}
+author: Kazma
+host:
+port:
+tags:
+  - rev
+  - easy
+canonical_name: Kazdle
+compose:
+distfiles:
+  - ./chal/Kazdle.zip

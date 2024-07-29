@@ -1,0 +1,17 @@
+name: "Chosen0"
+description: |
+  ![lisan](https://preview.redd.it/dune-lisan-al-gaib-v0-f8wd1chozmmc1.jpeg?auto=webp&s=96440fbd00b2eac6072542f3c4657ca88a15a7fc)
+  Let's see if you are the chosen one.
+
+  Author: Kazma
+flag: NCKUCTF{Expelliarmus4817553!!!}
+author: Kazma
+host:
+port:
+tags:
+  - rev
+  - easy
+canonical_name: chosen0
+compose:
+distfiles:
+  - ./chal/chosen0
