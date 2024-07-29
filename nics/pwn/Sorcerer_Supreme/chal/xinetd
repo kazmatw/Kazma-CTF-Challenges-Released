@@ -1,0 +1,14 @@
+service supreme
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/supreme/run.sh
+    user = supreme
+    port = 5018
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}
+

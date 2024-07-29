@@ -1,0 +1,14 @@
+service bread
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/bread/run.sh
+    user = bread
+    port = 5017
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}
+

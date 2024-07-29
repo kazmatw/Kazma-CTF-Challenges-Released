@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  bread:
+    build: ./
+    volumes:
+      - ./share/:/home/bread:ro
+      - ./xinetd:/etc/xinetd.d/bread:ro
+    ports:
+      - "5017:5017"

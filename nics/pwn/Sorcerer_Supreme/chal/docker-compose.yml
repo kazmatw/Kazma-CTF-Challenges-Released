@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  supreme:
+    build: ./
+    volumes:
+      - ./share/:/home/supreme:ro
+      - ./xinetd:/etc/xinetd.d/supreme:ro
+    ports:
+      - "5018:5018"
