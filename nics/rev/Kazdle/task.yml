@@ -4,6 +4,8 @@ description: |
   Have you ever play wordle?
 
   Author: Kazma
+hint: |
+  You can use `python -m http.server` to run the game on your localhost.
 flag: NCKUCTF{allbeefneedispatience!}
 author: Kazma
 host:
