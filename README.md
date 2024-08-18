@@ -3,6 +3,13 @@
 If you find this project useful, please consider giving it a star ⭐! It helps more people discover it.
 
 ## Challenges Info
+
+### AIS3 Junior C Project
+
+| Challenge            | Category | Difficulty | Description                                                               |
+| -------------------- | -------- | ---------- | ------------------------------------------------------------------------- |
+| Never Gonna Let You LOG in    | web    |  medium      | Explore PHP's `strcmp` vulnerabilities and leverage Local File Inclusion (LFI) to achieve Remote Code Execution (RCE) using a webshell stored in auth.log. |
+
 ### YZUIMSC 2024
 
 | Challenge            | Category | Difficulty | Description                                                               |
