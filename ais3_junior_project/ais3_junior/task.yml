@@ -1,0 +1,20 @@
+name: "Never Gonna Let You LOG in"
+description: |
+  絕對不會讓你們登入的嘿嘿 
+  這是一個絕對安全的網站 >< 
+  不過...3333 port 好像有奇怪的東西？
+  ![never](https://64.media.tumblr.com/20169b39b10fa69408a9ab8fb6dc2bd8/be69d2d5fcd9edc3-c8/s500x750/47075360b8b02581d39179d7792f3ec47318b8ca.gif)
+
+  Connection info: `https://junior.kazma.tw`
+
+  Author: Kazma & Junior_C
+flag: "AIS3_Junior{https://youtube.com/shorts/fDzjcDqJ0Ig?si=o4n8VGgjPd76uVnW}"
+author: Kazma & Junior_C
+host: junior.kazma.tw
+tags:
+  - web 
+canonical_name: log
+compose: ./docker-compose.yml
+distfiles:
+  - 
+

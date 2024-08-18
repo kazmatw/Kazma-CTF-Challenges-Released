@@ -1,0 +1,17 @@
+services:
+    junior:
+        build:
+            context: ./src
+            args:
+                FLAG: AIS3_Junior{https://youtube.com/shorts/fDzjcDqJ0Ig?si=o4n8VGgjPd76uVnW}
+        volumes:
+            - ./src/:/var/www/html/
+        restart: always
+        ports:
+            - 6000:80/tcp
+            - 3333:22/tcp
+        deploy:
+          resources:
+            limits:
+              cpus: '1'
+              memory: 1G
